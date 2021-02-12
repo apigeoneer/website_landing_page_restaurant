@@ -46,7 +46,7 @@ a {
     width: 100%;
     text-align: center;
     font-size: 1.1rem;
-    padding: 25px 20px 5px 20px;
+    padding: 20px 20px;
     display: none;
 }
 
@@ -86,41 +86,54 @@ a {
 }
 
 .parallax-bg {
-    background-image: url("https://images.unsplash.com/photo-1518290943012-2c2bec0e54d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
     min-height: 100vh; 
     background-attachment: fixed;
   }
 
-.cover-text {
+#cover-text {
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Oleo Script', cursive;
+
+    padding: 15px;
+
+    font-family: 'Roboto', sans-serif;
     font-weight: thin;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
     line-height: 1.5rem;
-    letter-spacing: 0.04rem;
     font-weight: bold;
-    padding: 55px 15px 10px 15px;
     color: #213423;
+
+    background-color: rgba(200, 200, 200, 0.6);
+}
+
+#cover-name {
+    font-weight: bolder;
 }
 
 #cover-buttons {
     display: flex;
 }
 
-#cover-buttons first-child {
-    margin-right: 10px;
+#cover-buttons button {
+    margin: 40px 5px 10px 5px;
+    background-color: transparent;
+    color: #213423;
+    font-size: 0.65rem;
+    font-weight: bold;
+    border: 1.2px solid #213423;
+    padding: 5px;
 }
 
-
-#cover button {
-    margin-top: 80px;
-    background-color: transparent;
-    font-size: 0.6rem;
-    font-weight: bold;
-    border: 1.2px solid #121212;
-    padding: 5px;
+#cover-buttons button:hover {
+    background-color: #213423;
+    color: #f2f2f2;
 }
 
 /* cover ends */
@@ -263,6 +276,11 @@ a {
     font-weight: bold;
 }
 /* menu section ends */
+
+/* menu section desktop view */
+@media all and (min-width: 960px) {
+
+}
 
 /* gallery section begins */
 #gallery {
